@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base /vite-app/",
+    "build": "vite build --base /vite-pug/",
     "serve": "vite preview",
     "deploy": "npm run build && node ./scripts/deploy.js"
   },

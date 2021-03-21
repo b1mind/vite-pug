@@ -1,7 +1,4 @@
-//- //< Sassy settings
-$minWidthLg: 1000px;
-$minWidthMed: 800px;
-$minWidthSml: 420px;
+@use 'template/scss/variables' as *;
 
 //- //>Base settings
 :root {
@@ -11,6 +8,7 @@ $minWidthSml: 420px;
   --clr-secondary-dark: #00d6dd;
   --clr-white: white;
   --clr-black: black;
+  --clr-bg: #1b1b1b;
 }
 
 *,
@@ -27,7 +25,8 @@ body {
   height: 100%;
   min-height: 100%;
   margin: 0;
-  background: var(--clr-dark);
+  color: var(--clr);
+  background: var(--clr-bg);
 }
 
 a {
@@ -82,6 +81,7 @@ ul {
 }
 
 header {
+  color: var(--clr-bg);
   background: var(--clr);
   @media (max-width: $minWidthMed) {
     position: sticky;
