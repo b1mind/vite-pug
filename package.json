@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "build": "vite build --base /vite-app/",
+    "serve": "vite preview",
+    "deploy": "npm run build && node ./scripts/deploy.js"
   },
   "devDependencies": {
-    "vite": "^2.1.0"
+    "autoprefixer": "^10.2.5",
+    "gh-pages": "^3.1.0",
+    "postcss-combine-media-query": "^1.0.1",
+    "sass": "^1.32.8",
+    "vite": "^2.1.0",
+    "vite-plugin-pug": "^0.1.1"
   }
 }
