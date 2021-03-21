@@ -1,4 +1,8 @@
 Todo: 
   ☐ readme for use
-  ☐ setup build for multi-page site
-  ☐ better file structure 
+  ☐ root path var for nav and other rel links
+  ☐ better file structure for pages
+  ☐ add gsap and any other libs
+
+Archive:
+  ✔ setup build for multi-page site @done(21-03-21 00:39) @project(Todo)
