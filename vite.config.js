@@ -4,11 +4,11 @@ import pugPlugin from 'vite-plugin-pug'
 const { resolve } = require('path')
 
 export default defineConfig({
-  plugins: [pugPlugin()],
+  plugins: [pugPlugin(undefined, { pagesUrl: '/pages/' })],
 
   server: { port: 9001 },
   optimizeDeps: {
-    // include: ['gsap/ScrollTrigger.js'],
+    // include: ['node_modules/gsap/ScrollTrigger'],
   },
 
   build: {
