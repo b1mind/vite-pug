@@ -1,8 +1,12 @@
 Todo: 
   ☐ readme for use
-  ☐ root path var for nav and other rel links
+  ☐ better way to handle routes than global var
+  ☐ fix pages head and asset paths
+
+Issues:
   ☐ better file structure for pages
-  ☐ add gsap and any other libs
+    ☐ having to use html pages for entry points and in vite.config 
 
 Archive:
+  ✔ root path var for nav and other rel links @done(21-04-29 01:26) @project(Todo)
   ✔ setup build for multi-page site @done(21-03-21 00:39) @project(Todo)

@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <pug src="template/head.pug" />
-  <pug src="src/index.pug" />
+  <head>
+    <!-- 
+    ('b1m1nd')
+    -----------
+        __ _   _    _             _ 
+       /  | \_/ \  (_) _ __    __| |
+        | |_   _ \ | || '_ \  / _  |
+        | | \_/ \ \| || | | || (_| |
+        |_|      \/|_||_| |_| \__,_|
+    ---------------------------------
+    -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive way to make a pizza" />
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <link rel="stylesheet" href="./src/styles/global.scss" />
+    <script type="module" src="./src/js/main.js"></script>
+
+    <pug src="template/head.pug" />
+  </head>
+  <body>
+    <pug src="src/index.pug" />
+  </body>
 </html>
