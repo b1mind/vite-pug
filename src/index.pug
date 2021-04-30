@@ -2,7 +2,6 @@ block head
   link(rel='stylesheet' url='./src/styles/emailBtn.scss')
   link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css' rel='stylesheet' type='text/css')
 
-
 block content
   -let val = 6
   -let name = 'pug'
@@ -14,7 +13,7 @@ block content
     .grid
       .cell
         h2 now this is better
-        form.newForm(action='' data-email-form)
+        form.newForm(action='' data-value="email@none.com")
           .box 
             b.cover
               | Request Newsletter
@@ -22,9 +21,9 @@ block content
               label(for="email") 
                 input(tabindex="1" type='text', name='email', placeholder='yourName@email.com' data-email-input)
           .box2
-            b.btn.reveal(tabindex="1" role="button" aria-pressed="false") 
+            button.btn.reveal(tabindex="1" role="button" aria-pressed="false") 
               i.far.fa-envelope
-            b.btn.addBtn(tabindex="2" role="button" aria-pressed="true" type='submit') 
+            button.btn.addBtn(tabindex="2" role="button" aria-pressed="true" type='submit') 
               i.far.fa-paper-plane
 
       //- while val > 0

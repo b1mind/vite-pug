@@ -4,7 +4,7 @@ import pugPlugin from 'vite-plugin-pug'
 const { resolve } = require('path')
 
 export default defineConfig({
-  plugins: [pugPlugin(undefined, { pagesUrl: '/pages/' })],
+  plugins: [pugPlugin(undefined, { pagesUrl: './pages/' })],
 
   server: { port: 9001 },
   optimizeDeps: {

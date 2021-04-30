@@ -1,6 +1,5 @@
 import { gsap } from 'gsap'
 import { CSSPlugin } from 'gsap/CSSPlugin'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(CSSPlugin)
 
 console.log('I am Hello Pug World')
@@ -15,22 +14,22 @@ const tl_click = gsap
 
     defaults: {
       duration: 0.3,
-      ease: 'bounce.inOut(1.5)',
+      ease: 'circ.inOut(1.5)',
     },
   })
 
-  .to(btnBox, { scaleX: 0.9 })
-  .to('.box', { scaleX: 0.985 }, '<')
-  .to(btnBox, { scaleX: 1 })
-  .to('.box', { scaleX: 1 }, '<')
+  .to(btnBox, { scale: 0.9 })
+  // .to('.box', { scale: 0.985 }, '<')
+  .to(btnBox, { scale: 1 })
+  // .to('.box', { scale: 1 }, '<')
   .reversed(true)
 
 const tl = gsap
   .timeline({
     paused: true,
-    // defaults: {
-    //   ease: 'bounce',
-    // },
+    defaults: {
+      ease: 'back.inOut(1.5)',
+    },
   })
 
   .to('.box', { yPercent: 50, rotationX: '90' })
@@ -52,14 +51,14 @@ function checkKeyDown(keyD) {
 }
 
 btnBox.addEventListener('click', e => {
-  const thisBtn = e.target.closest('b')
+  const thisBtn = e.target.closest('button')
   if (!thisBtn) return
   tl_click.reversed() ? tl_click.play() : tl_click.reverse()
   tl.reversed() ? tl.play() : tl.reverse()
 })
 
 btnBox.addEventListener('keydown', function (e) {
-  const thisBtn = e.target.closest('b')
+  const thisBtn = e.target.closest('button')
   const keyD = thisBtn.key !== undefined ? e.key : e.keyCode
   if (!thisBtn || !keyD) return
 
@@ -71,7 +70,6 @@ btnBox.addEventListener('keydown', function (e) {
 })
 
 form.addEventListener('submit', e => {
-  e.preventDefault
-  console.log(e.target.dataset.emailForm)
-  //handle form e.target.dataset.emailForm
+  e.preventDefault()
+  console.log(e.target.dataset.value)
 })

@@ -7,12 +7,16 @@ $oneFont: 'Ubuntu Condensed', sans-serif;
 $bodyFont: 'Nunito Sans';
 
 .btn {
+  padding: 0.5em 0.9em;
   display: grid;
   grid-column: 2/3;
   align-content: center;
-  color: black;
   text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-weight: bolder;
   background: $oneLightBlue;
+  border: 0px solid black;
   cursor: pointer;
   transition: all 0.5s;
 
