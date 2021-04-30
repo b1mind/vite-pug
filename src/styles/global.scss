@@ -1,5 +1,8 @@
 @use 'template/scss/variables' as *;
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
 //- //>Base settings
 :root {
   --clr: #f3e4ff;
@@ -27,6 +30,7 @@ body {
   margin: 0;
   color: var(--clr);
   background: var(--clr-bg);
+  font-family: 'Nunito Sans', Courier, monospace;
 }
 
 a {
@@ -62,8 +66,8 @@ ul {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  justify-content: center;
-  align-content: center;
+  // did not use place because hierarchy
+  justify-items: center;
   align-items: center;
   text-align: center;
 }

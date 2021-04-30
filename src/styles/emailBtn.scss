@@ -1,0 +1,100 @@
+//- sassy vars
+$oneBlue: #007aff;
+$oneLightBlue: #8dcafc;
+$oneGreen: #9cf9cc;
+$oneBlueBg: #282c34;
+$oneFont: 'Ubuntu Condensed', sans-serif;
+$bodyFont: 'Nunito Sans';
+
+.btn {
+  display: grid;
+  grid-column: 2/3;
+  align-content: center;
+  color: black;
+  text-align: center;
+  background: $oneLightBlue;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover,
+  &:focus {
+    color: #fefefe;
+    outline: transparent;
+  }
+}
+
+input[type='text'] {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  color: white;
+  background: $oneLightBlue;
+  border: none;
+
+  &:focus {
+    color: black;
+    background: white;
+  }
+
+  &::placeholder {
+    color: #51a4ff;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.newForm {
+  width: 15.5rem;
+  height: 2.5rem;
+  display: grid;
+  grid-template-columns: 13em 2.5em;
+  grid-template-rows: 2.5em;
+  gap: 0.2em;
+}
+
+.box,
+.box2 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.cover {
+  height: 100%;
+  background: $oneBlue;
+  display: grid;
+  text-align: center;
+  user-select: none;
+  align-items: center;
+}
+
+.emailInput {
+  height: 100%;
+  color: black;
+  background: white;
+  transform: translate(0, -100%) rotateX(90deg);
+  transform-origin: top center;
+  input {
+    transform: rotateX(180deg);
+  }
+}
+
+.reveal,
+.addBtn {
+  height: 100%;
+}
+
+.addBtn {
+  color: black;
+  background: $oneBlue;
+  transform: translate(0, -100%) rotateX(90deg);
+  transform-origin: bottom center;
+
+  i {
+    transform: rotateX(180deg);
+  }
+}
+
+.cell {
+  height: 250px;
+}
