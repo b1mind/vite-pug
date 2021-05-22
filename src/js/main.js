@@ -1,6 +1,7 @@
 import { gsap } from 'gsap'
 import { CSSPlugin } from 'gsap/CSSPlugin'
-gsap.registerPlugin(CSSPlugin)
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(CSSPlugin, ScrollTrigger)
 
 console.log('I am Hello Pug World')
 CSSPlugin.defaultTransformPerspective = 600
